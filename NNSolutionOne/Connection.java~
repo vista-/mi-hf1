@@ -1,0 +1,24 @@
+package NNSolutionOne;
+
+import java.util.Random;
+
+/**
+ * Created by vista on 10/12/16.
+ */
+public class Connection {
+    public Double getWeight() {
+        return weight;
+    }
+
+    private Double weight;
+
+    public Connection(Double weight) {
+        this.weight = weight;
+    }
+
+    public Connection() {
+
+        Random rnd = new Random();
+        this.weight = rnd.nextGaussian()*0.1;
+    }
+}
